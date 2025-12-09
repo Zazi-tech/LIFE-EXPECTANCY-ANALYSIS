@@ -1,5 +1,4 @@
 # LIFE-EXPECTANCY-ANALYSIS
-
 **Executive Summary**
 Between 2000 and 2015, global life expectancy rose from 66.9 to 71.5 years; a gain of 4.6 years in just one and a half decades. Developing countries achieved the fastest progress (+5.1 years) while developed nations added a more modest +3.2 years. Despite convergence, a persistent 11-year gap remains between the two groups in 2015.
 The strongest predictors of longer life are not wealth alone, but years of schooling, income equality, low adult mortality, and high immunization coverage. Countries that combine moderate economic growth with strong public health and education systems (e.g., Cuba, Viet Nam) consistently outperform wealthier peers.
@@ -36,6 +35,7 @@ The strongest predictors of longer life are not wealth alone, but years of schoo
 5.  Target middle-income transition countries ($5k–$15k GDP per capita) for rapid gains.
 
 **Conclusion**
+
 The first 15 years of the 21st century proved that rapid, large-scale improvements in human longevity are possible. The roadmap is clear: combine sustained investment in education and basic healthcare with targeted disease control and equitable growth.
 This Power BI dashboard transforms complex global health data into an intuitive, interactive tool for decision-makers enabling real-time exploration, benchmarking, and evidence-based planning for a longer, healthier future for all.
 
