@@ -21,6 +21,8 @@ The strongest predictors of longer life are not wealth alone, but years of schoo
 
 •  Analytics: Correlation analysis, time-series decomposition, DAX measures for YoY change and benchmarking.
 ![lifeexp](lifexp.png)
+
+
 **Key Findings**
 |  Rank    |         Insight                                             |   2015 Value/Change                                |
 | ---------| -----------------------------------------------------------  |  ------------------------------------------------- |
