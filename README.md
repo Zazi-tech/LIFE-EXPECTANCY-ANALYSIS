@@ -14,8 +14,11 @@ The strongest predictors of longer life are not wealth alone, but years of schoo
 **Methodology**
 
 •  Dataset: 2,938 country-year observations (193 countries, WHO & World Bank).
+
 •  Platform: Microsoft Power BI Desktop.
+
 •  Transformations: Data type correction, blank imputation (column averages), creation of GDP per capita and regional groupings.
+
 •  Analytics: Correlation analysis, time-series decomposition, DAX measures for YoY change and benchmarking.
 
 **Key Findings**
