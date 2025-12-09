@@ -12,6 +12,7 @@ The strongest predictors of longer life are not wealth alone, but years of schoo
 5.  Provide evidence-based policy recommendations aligned with SDG 3.
 
 **Methodology**
+
 •  Dataset: 2,938 country-year observations (193 countries, WHO & World Bank).
 •  Platform: Microsoft Power BI Desktop.
 •  Transformations: Data type correction, blank imputation (column averages), creation of GDP per capita and regional groupings.
