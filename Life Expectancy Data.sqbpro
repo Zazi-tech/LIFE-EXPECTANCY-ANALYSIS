@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/DELL/Downloads/Life Expectancy Data.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="browser pragmas structure query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="150"/><column_width id="3" width="4929"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,15:mainlife_expectancy"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="life_expectancy" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="300"/><column index="2" value="61"/><column index="3" value="107"/><column index="4" value="173"/><column index="5" value="169"/><column index="6" value="153"/><column index="7" value="84"/><column index="8" value="263"/><column index="9" value="126"/><column index="10" value="93"/><column index="11" value="61"/><column index="12" value="204"/><column index="13" value="61"/><column index="14" value="194"/><column index="15" value="117"/><column index="16" value="96"/><column index="17" value="123"/><column index="18" value="120"/><column index="19" value="243"/><column index="20" value="217"/><column index="21" value="300"/><column index="22" value="108"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">                                                                --LIFE EXPECTANCY DATASET QUERIES
+--1.	What are the key patterns and variations in life expectancy across countries from 2000–2015?
+SELECT Country, Year, Life_expectancy
+FROM life_expectancy
+WHERE Year BETWEEN 2000 AND 2015
+ORDER BY Country, Year;
+
+-- 2.	Which countries consistently maintain a high life expectancy, and which remain low?
+SELECT Country,AVG(Life_expectancy) AS Avg_LifeExp
+FROM life_expectancy
+GROUP BY Country
+ORDER BY Avg_LifeExp DESC;
+
+-- 3.	How do adult mortality rates influence life expectancy?
+SELECT Country, Year, Life_expectancy, Adult_mortality
+FROM life_expectancy
+ORDER BY Adult_mortality DESC;
+
+-- 4.	How does the prevalence of HIV/AIDS impact life expectancy across countries?
+SELECT country,year,life_expectancy,`hiv/aids`
+FROM life_expectancy
+ORDER BY `hiv/aids` DESC;
+
+--5. To what extent do immunization rates (Polio, Diphtheria, Hepatitis B) predict life expectancy?
+SELECT Country, Year, Life_expectancy, Polio, Diphtheria, Hepatitis_B
+FROM life_expectancy;
+
+-- 6.	What is the relationship between GDP per capita and life expectancy?
+SELECT Country, Year, Life_expectancy, GDP
+FROM life_expectancy
+ORDER BY GDP DESC;
+
+-- 7.	How does the income composition index relate to life expectancy?
+SELECT Country, Year, Life_expectancy, Income_composition_of_resources
+FROM life_expectancy;
+
+-- 8.	How does schooling influence long-term health outcomes?
+SELECT Country, Year, Life_expectancy, Schooling
+FROM life_expectancy
+ORDER BY Schooling DESC;
+
+-- 9.	Do countries with higher health expenditure experience higher life expectancy?
+SELECT Country, Year, Life_expectancy, Total_expenditure
+FROM life_expectancy;
+
+-- 10.	What role do infant deaths and under-five deaths play in determining national life expectancy?
+SELECT Country, Year, Life_expectancy, Infant_deaths, Under_five_deaths
+FROM life_expectancy
+ORDER BY Infant_deaths DESC;
+
+-- 11.	What are the differences in life expectancy between developed vs developing nations?
+SELECT Status, AVG(Life_expectancy) AS Avg_LifeExp
+FROM life_expectancy
+GROUP BY Status;
+
+-- 12.	Are developing countries showing significant progress during 2000–2015?
+SELECT Country,MIN(Life_expectancy) AS Earliest, MAX(Life_expectancy) AS Latest, (MAX(Life_expectancy) - MIN(Life_expectancy)) AS Improvement
+FROM life_expectancy
+WHERE Status = 'Developing'
+GROUP BY Country
+ORDER BY Improvement DESC;
+
+-- 13.	Which countries show warning signs (declining or stagnating life expectancy)?
+SELECT Country,(MAX(Life_expectancy) - MIN(Life_expectancy)) AS Change
+FROM life_expectancy
+GROUP BY Country
+HAVING Change &lt;= 0
+ORDER BY Change ASC;
+
+-- 14.	Which nations have the highest burden of disease (HIV, measles) and how does it relate to life expectancy?
+SELECT country,year,life_expectancy,`hiv/aids`,measles
+FROM life_expectancy
+ORDER BY `hiv/aids` DESC, measles DESC;
+
+-- 15.	Which countries could potentially fall behind if current patterns continue?
+SELECT Country,(MAX(Life_expectancy) - MIN(Life_expectancy)) AS Trend
+FROM life_expectancy
+GROUP BY Country
+HAVING Trend &lt; 5  -- small improvement
+ORDER BY Trend ASC;
+
+
+
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
