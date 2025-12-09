@@ -22,7 +22,7 @@ The strongest predictors of longer life are not wealth alone, but years of schoo
 •  Analytics: Correlation analysis, time-series decomposition, DAX measures for YoY change and benchmarking.
 
 **Key Findings**
-|  Rank    |          Insight                                             |   2015 Value/Change                                |
+|  Rank    |         Insight                                             |   2015 Value/Change                                |
 | ---------| -----------------------------------------------------------  |  ------------------------------------------------- |
 |   1      |  Life expectancy Increased by 4.6 years                      |   66.9 - 71.5 years                                |
 |   2      |  Developing countries closed the gap slightly                |   Gap narrowed from 13.2 to 11.3 years             |
