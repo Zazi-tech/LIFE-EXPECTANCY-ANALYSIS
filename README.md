@@ -2,6 +2,8 @@
 
 - [Executive Summary ](#executive-summary)
 
+- [Objectives](#objectives)
+
 - [Methodology](#methodology)
 
 - [Key Findings](#key-findings)
