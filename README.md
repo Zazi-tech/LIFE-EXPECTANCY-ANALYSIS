@@ -50,6 +50,14 @@ The strongest predictors of longer life are not wealth alone, but years of schoo
 The first 15 years of the 21st century proved that rapid, large-scale improvements in human longevity are possible. The roadmap is clear: combine sustained investment in education and basic healthcare with targeted disease control and equitable growth.
 This Power BI dashboard transforms complex global health data into an intuitive, interactive tool for decision-makers enabling real-time exploration, benchmarking, and evidence-based planning for a longer, healthier future for all.
 
+## Tools and Technologies Used
+
+![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=black)
+![Data Analysis](https://img.shields.io/badge/Data%20Analysis-000000?style=for-the-badge)
+
+
 
 
 
