@@ -24,7 +24,7 @@ The strongest predictors of longer life are not wealth alone, but years of schoo
 
 **LIFE EXPECTANCY REPORT DASHBOARD**
 
-![Dashboard Preview](Lifeexpvv.png)
+![Dashboard Preview](Life Expectancy Visualization.png)
 
 **Key Findings**
 |  Rank    |         Insight                                             |   2015 Value/Change                                |
