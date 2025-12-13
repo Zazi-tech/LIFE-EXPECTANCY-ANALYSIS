@@ -1,4 +1,4 @@
-# LIFE-EXPECTANCY-ANALYSIS
+# LIFE-EXPECTANCY-ANALYSIS REPORT
 
 ## Table of Contents
 - [Executive Summary](#executive-summary)
