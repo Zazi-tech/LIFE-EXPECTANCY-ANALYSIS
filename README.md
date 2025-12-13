@@ -1,14 +1,14 @@
-##-Executive Summary
+##Executive Summary
 
-##-Objectives
+##Objectives
 
-##-Methodology
+##Methodology
 
-###-Key Findings
+###Key Findings
 
 ###-Recommendations
 
-##-Conclusion
+##Conclusion
 
 # LIFE-EXPECTANCY-ANALYSIS
 **Executive Summary**
