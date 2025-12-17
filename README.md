@@ -7,6 +7,7 @@
 - [Key Findings](#key-findings)
 - [Recommendations](#recommendations)
 - [Conclusions](#conclusions)
+- [Tools And Technologies Used](tools-technologies-used)
 
 ## Executive Summary
 Between 2000 and 2015, global life expectancy rose from 66.9 to 71.5 years; a gain of 4.6 years in just one and a half decades. Developing countries achieved the fastest progress (+5.1 years) while developed nations added a more modest +3.2 years. Despite convergence, a persistent 11-year gap remains between the two groups in 2015.
